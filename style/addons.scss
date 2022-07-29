@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+$desaturatedRed: hsl(0, 36%, 70%);
+$softRed: hsl(0, 93%, 68%);
+$darkGrayishRed: hsl(0, 6%, 24%);
+
+$fontSize: 16px;
+$fontFamily: 'Josefin Sans', sans-serif;
+$fontWeightThin: 300;
+$fontWeightMedium: 400;
+$fontWeightBold: 600;
+
+$gradientOne: linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradientTwo: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));

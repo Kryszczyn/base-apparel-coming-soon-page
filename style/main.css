@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#fff5f5));
+  background-image: linear-gradient(to right, white, #fff5f5);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 10rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    padding: 5rem;
+  }
+}
+
+.logo__container {
+  padding-bottom: 8rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo__container {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    padding: 2rem;
+  }
+}
+
+.content .title {
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.content .title span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+@media only screen and (max-width: 1400px) {
+  .content .title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content .title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .content .title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content .title, .content .description {
+    text-align: center;
+  }
+}
+
+.content .description {
+  color: #ce9797;
+  line-height: 1.75rem;
+  padding-bottom: 2rem;
+}
+
+.content .email__container {
+  position: relative;
+}
+
+.content .email__container input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: solid #ce9797 1px;
+}
+
+.content .email__container input::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.content .email__container input:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.content .email__container input::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.content .email__container input::placeholder {
+  color: #ce9797;
+}
+
+.content .email__container button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .75rem;
+  width: 5.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f8bfbf), to(#ee8c8c));
+  background-image: linear-gradient(to right, #f8bfbf, #ee8c8c);
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.content .email__container button:hover {
+  opacity: .8;
+}
+
+.content .email__container .icon-error {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, calc(-50% - .75rem));
+          transform: translate(0, calc(-50% - .75rem));
+  right: 6rem;
+  display: none;
+}
+
+.content .email__container .error-info {
+  display: none;
+  color: #f96262;
+  margin-left: 1rem;
+  margin-top: .5rem;
+}
+
+.img__container {
+  width: 100%;
+  height: 100%;
+  background-image: url("./../images/hero-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px) {
+  .img__container {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    background-image: url("./../images/hero-mobile.jpg");
+    background-size: cover;
+    margin: 100px 0;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
